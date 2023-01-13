@@ -43,7 +43,7 @@ const authSupervisior = async (req,res,next)=>{
        const data = jwt.verify(token, process.env.JWT_KEY);
        // Get User from id 
        req.supervisior =  data.supervisior
-       console.log(req.supervisior.departmentName)
+
       
       next()
 
